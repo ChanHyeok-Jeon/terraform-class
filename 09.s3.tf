@@ -1,5 +1,5 @@
-resource "aws_s3_bucket" "ldcc-as-demo" {
-  bucket = "ldcc-as-jeon"
+resource "aws_s3_bucket" "jeon-chanhyeok-as-demo" {
+  bucket = "jeon-chanhyeok-as-demo"
 
 }
 
