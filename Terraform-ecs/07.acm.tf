@@ -1,6 +1,6 @@
 # 인증서 생성
 resource "aws_acm_certificate" "vec_prd_cert" {
-  domain_name       = "powermct.shop"
+  domain_name       = "ch-jeon.store"
   validation_method = "DNS"
 
   tags = {

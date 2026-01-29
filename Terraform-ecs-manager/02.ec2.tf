@@ -12,7 +12,7 @@ resource "aws_instance" "vec_prd_ecs_pub_2a" {
   instance_type               = "t2.micro"
   vpc_security_group_ids      = [aws_security_group.vec_prd_ecs_pub_2a_sg.id]
   subnet_id                   = data.aws_subnet.vec_prd_bst_subnet_2a.id # data로 참조
-  key_name                    = "powermvp"
+  key_name                    = "terraform_jeon"                         # 기존에 생성된 keypair 이름
   associate_public_ip_address = true
   private_ip                  = "10.250.4.240" # 고정 IP (빠뜨리셨네요!)
 
